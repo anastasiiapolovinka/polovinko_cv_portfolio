@@ -1,0 +1,410 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1, 5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End of reset */
+
+:root {
+  --txt-color: #01153b;
+  --main-color: #fff;
+  --link-color: #3057a2;
+  --txt-marked-color: #f54932;
+  --primary-color: #1f1f1f;
+  --secondary-color: #fbce51;
+  --bg-color: #fcfaf4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  pointer-events: painted;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-color);
+  color: var(--txt-color);
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+}
+
+@media (min-width: 1222px) {
+  .container {
+    max-width: 1222px;
+  }
+}
+
+/* Header */
+
+.head_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.job_title {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.socials img {
+  width: 38px;
+  height: 40px;
+}
+
+.skills {
+  margin: 40px;
+}
+
+.skills_wrapper {
+  border-bottom: 1px solid var(--secondary-color);
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.technologies {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.programs {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experiece {
+  margin-top: 30px;
+}
+
+.experiece_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experiece_item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  background-color: var(--bg-color);
+  padding: 40px 100px;
+  border-radius: 20px;
+}
+
+.experiece_icon {
+  width: 64px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.title_border {
+  border-left: 4px double var(--secondary-color);
+  padding-left: 4px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+/* PLAYERS SECTION */
+
+.projects {
+  margin: 20px 0 80px;
+}
+
+.projectsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectsTitle {
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 65px;
+  text-transform: uppercase;
+}
+
+.decorationImg {
+  display: none;
+}
+
+.carousel {
+  margin-top: 42px;
+}
+
+.carouselBtns {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.projectList {
+  display: flex;
+  padding-bottom: 80px;
+  border-bottom: 8px double var(--secondary-color);
+}
+
+.projectCard {
+  flex-direction: column;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.projectCard img {
+  border: 1px solid #d9d9d9;
+  width: 100%;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.projectList a {
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Golos Text";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.projectWeb:hover {
+  background-color: var(--link-color);
+  color: var(--main-color);
+}
+
+.projectWeb {
+  border-radius: 62px;
+  border: 1px solid var(--link-color);
+  padding: 12px;
+}
+
+.projectName {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+}
+
+.projectRepo {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.6;
+  border: none;
+}
+
+.projectRepo:hover {
+  color: var(--txt-color);
+}
+
+.arrowPrev {
+  background: var(--txt-color) url(./images/arrowLeft.png) no-repeat left 14px
+    center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+}
+
+.arrowPrev:hover {
+  background-color: var(--secondary-color);
+}
+
+.arrowPrev:disabled {
+  background-color: var(--border-color);
+}
+
+.arrowNext {
+  background: var(--txt-color) url(./images/arrowRight.png) no-repeat right 14px
+    center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+}
+
+.arrowNext:hover {
+  background-color: var(--secondary-color);
+}
+
+.arrowNext:disabled {
+  background-color: var(--border-color);
+}
+
+footer .container {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 8px double var(--secondary-color);
+}
